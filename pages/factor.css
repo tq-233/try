@@ -1,0 +1,109 @@
+/* 因子研究看板页面的样式 */
+.factor-page {
+    padding: 20px;
+}
+
+h1 {
+color: #333;
+}
+
+.ant-table {
+background-color: #fff;
+margin-top: 20px;
+}
+
+.ant-modal-body {
+background-color: #f5f5f5;
+}
+
+.ant-btn-primary {
+background-color: orange;
+border-color: orange;
+}
+
+/* Chart 容器 */
+.chart-container {
+    margin-top: 30px;
+}
+/* Top factors section */
+.top-factors-section {
+margin-top: 40px;
+}
+
+.top-factors-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+.factor-card {
+background-color: #292929;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+
+.factor-card h3 {
+color: #ffffff;
+}
+
+.factor-card p {
+color: #ff9800;
+}
+/* Chart container */
+.chart-container {
+width: 100%;
+height: 400px;
+margin-top: 30px;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+stroke: #444;
+}
+
+.recharts-tooltip-wrapper {
+color: white;
+background-color: #333;
+border-radius: 5px;
+}
+
+.recharts-bar-rectangle {
+stroke: #ff9800;
+stroke-width: 1px;
+}
+
+.recharts-bar-rectangle:hover {
+fill: #e57c00;
+}
+
+/* Custom for Pie and Radar chart */
+.recharts-radar {
+stroke: #ff9800;
+}
+
+.recharts-radar:hover {
+fill: #e57c00;
+}
+
+/* Upper-right corner nickname circle */
+.user-circle {
+position: absolute;
+top: 20px;
+right: 20px;
+background-color: #007bff;
+color: white;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.user-circle:hover {
+background-color: #0056b3;
+}

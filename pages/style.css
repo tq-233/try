@@ -1,0 +1,27 @@
+/* styles.css */
+.sidebar ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 120px);
+    height: auto;
+    font-size: larger;
+  }
+  
+.sidebar li {
+    text-align: center;
+    font-style: normal;
+    font-size: medium;
+  }
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none; /* 移除链接下划线 */
+  background-color: #007bff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;}
+.heroSection h1 {
+  font-size: 2rem; /* 例如，设置标题的字体大小 */
+}
+  

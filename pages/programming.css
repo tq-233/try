@@ -1,0 +1,47 @@
+/* 页面整体布局 */
+.programming-page {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+}
+
+h1 {
+color: #ffffff;
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* Jupyter Notebook Viewer 的样式 */
+.notebook-section {
+margin-bottom: 40px;
+}
+
+.jupyter-iframe {
+border: none;
+box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* 实时代码编辑器 */
+.code-editor-section {
+background-color: #1e1e1e;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.2);
+}
+
+/* 动态背景科技效果 */
+.background-effect {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+background: linear-gradient(135deg, #2e2e2e 25%, transparent 25%) -50px 0,
+            linear-gradient(225deg, #2e2e2e 25%, transparent 25%) -50px 0,
+            linear-gradient(315deg, #2e2e2e 25%, transparent 25%),
+            linear-gradient(45deg, #2e2e2e 25%, transparent 25%);
+background-size: 100px 100px;
+opacity: 0.1;
+}

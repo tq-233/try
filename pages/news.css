@@ -1,0 +1,17 @@
+/* 新闻区域样式 */
+.news-section {
+    padding: 2rem;
+    background-color: #1c1c1c; /* 深色新闻背景 */
+}
+
+.news-item {
+margin-bottom: 1rem;
+padding: 1rem;
+background-color: #292929;
+border-radius: 5px;
+}
+
+.news-item:hover {
+background-color: #ff9800;
+transition: background-color 0.3s ease;
+}

@@ -1,0 +1,196 @@
+/* Settings.css or in your global CSS file (index.css) */
+
+/* Container for the settings page */
+.settings-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titles */
+  .settings-container h2, .settings-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Form Group for user information */
+  .settings-container form {
+    margin-bottom: 40px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Input fields for user information */
+  .form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  button:disabled {
+    background-color: #7fb3d5;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Success and error messages */
+  .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  /* API Quota section */
+  .api-quota {
+    background-color: #eaf6ff;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .api-quota p {
+    margin: 5px 0;
+  }
+  
+  /* API Key Management section */
+  .api-keys {
+    margin-top: 30px;
+  }
+  
+  .api-keys-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .api-keys-table th, .api-keys-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .api-keys-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .api-keys-table td {
+    background-color: #f9f9f9;
+  }
+  
+  .api-keys-table tr:hover td {
+    background-color: #eef4ff;
+  }
+  
+  /* New API key input and button */
+  .new-api-key {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .new-api-key input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+    transition: border-color 0.2s;
+  }
+  
+  .new-api-key input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .new-api-key button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Logout button */
+  .logout-button {
+    background-color: #dc3545;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .settings-container {
+      padding: 15px;
+    }
+  
+    .api-keys-table th, .api-keys-table td {
+      padding: 10px;
+    }
+  
+    .form-group input, .new-api-key input {
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .logout-button {
+      font-size: 14px;
+    }
+  }
+  

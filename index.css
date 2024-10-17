@@ -1,0 +1,643 @@
+/* index.css */
+
+/* 通用页面样式 */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #26198a; /* 深色背景 */
+  color: #ffffff;
+}
+
+/* 导航栏布局 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #151515;
+  color: white;
+  position: sticky;  /* 确保导航栏在页面顶部固定 */
+  top: 0;
+  z-index: 1000;  /* 保证导航栏在其他内容之上 */
+}
+
+nav ul {
+  display: flex;  /* 使用flexbox使菜单水平排列 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;  /* 菜单项之间的间距 */
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover a {
+  color: #ff9800;  /* 鼠标悬停时的颜色变化 */
+}
+
+/* 导航栏按钮样式 */
+nav div button {
+  margin-left: 10px; /* 登录和注册按钮之间的间距 */
+  padding: 10px 20px;
+  background-color: orange; /* 按钮的橙色背景 */
+  border: none;
+  border-radius: 5px;
+  color: white; /* 白色的按钮文字 */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav div button:hover {
+  background-color: #e57c00; /* 鼠标悬停时的背景颜色 */
+}
+
+nav div button:focus {
+  outline: none; /* 去掉聚焦时的边框 */
+}
+
+
+/* 主页面内容和布局 */
+.content-wrapper {
+  display: flex;
+  height: calc(100vh - 80px); /* 除去导航栏的高度 */
+  padding: 20px;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+  width: 200px;
+  background-color: #2a2a2a;
+  padding: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: #ff9800;
+}
+
+/* 数据内容布局 */
+.data-content {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 两列布局 */
+  gap: 20px;
+}
+
+.data-item {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.data-item h2 {
+  margin-top: 0;
+}
+
+.data-item button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.data-item button:hover {
+  background-color: #e57c00;
+}
+
+/* 英雄区域样式 */
+.hero-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* 新闻区域样式 */
+.news-section {
+  padding: 2rem;
+  background-color: #1c1c1c; /* 深色新闻背景 */
+}
+
+.news-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #292929;
+  border-radius: 5px;
+}
+
+.news-item:hover {
+  background-color: #ff9800;
+  transition: background-color 0.3s ease;
+}
+
+/* 按钮样式 */
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e57c00;
+}
+
+a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff9800;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 搜索栏样式 */
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* 更高级的选择标签栏 */
+.category-select {
+  margin-bottom: 20px;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.strategy-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-info {
+  max-width: 60%;
+}
+
+.strategy-performance {
+  text-align: right;
+}
+
+.strategy-performance img {
+  display: block;
+  margin-top: 10px;
+  width: 150px;
+  height: 100px;
+}
+
+.view-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.view-button:hover {
+  background-color: #e57c00;
+}
+
+/* 因子研究看板页面的样式 */
+.factor-page {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.ant-table {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.ant-modal-body {
+  background-color: #f5f5f5;
+}
+
+.ant-btn-primary {
+  background-color: orange;
+  border-color: orange;
+}
+
+/* 页面整体布局 */
+.programming-page {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #0f0f0f;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Jupyter Notebook Viewer 的样式 */
+.notebook-section {
+  margin-bottom: 40px;
+}
+
+.jupyter-iframe {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* 实时代码编辑器 */
+.code-editor-section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.2);
+}
+
+/* 动态背景科技效果 */
+.background-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #2e2e2e 25%, transparent 25%) -50px 0,
+              linear-gradient(225deg, #2e2e2e 25%, transparent 25%) -50px 0,
+              linear-gradient(315deg, #2e2e2e 25%, transparent 25%),
+              linear-gradient(45deg, #2e2e2e 25%, transparent 25%);
+  background-size: 100px 100px;
+  opacity: 0.1;
+}
+
+/* 通用footer样式 */
+/* 内容区域，需要弹性填充剩余空间 */
+.content-wrapper {
+  flex: 1 0 auto; /* This ensures that the content takes up all available space above the footer */
+  padding: 20px;
+}
+
+/* Footer 样式，确保它始终位于页面底部 */
+.footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 二维码部分样式 */
+.qr-section {
+  text-align: center;
+}
+
+.qr-codes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.qr-code {
+  display: inline-block;
+  text-align: center;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.qr-code p {
+  color: white;
+}
+/* 登录页面样式 */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* 模拟交易页面的样式 */
+/* 模拟交易页面的表格样式，黑色文字 */
+.trading-page table th,
+.trading-page table td {
+  color: black; /* 设置表格文字为黑色 */
+  background-color: #f8f8f8; /* 保持表格的浅色背景，确保黑字清晰可见 */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.trading-page table th {
+  background-color: #ff9800; /* 表头背景为橙色 */
+  color: white; /* 表头文字为白色 */
+}
+
+.trading-page table tbody tr:hover {
+  background-color: #f1f1f1; /* 鼠标悬停时的行背景 */
+}
+
+
+/* 顶部切换按钮 */
+.tab-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-switch button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tab-switch button.active {
+  background-color: orange;
+  color: white;
+}
+
+/* 策略列表样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f8f8;
+}
+
+/* 我的组合部分 */
+.my-portfolio {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.create-portfolio-btn {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create-portfolio-btn:hover {
+  background-color: #e57c00;
+}
+
+/* 样式表更新 */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table thead tr {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Chart 容器 */
+.chart-container {
+  margin-top: 30px;
+}
+/* Top factors section */
+.top-factors-section {
+  margin-top: 40px;
+}
+
+.top-factors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.factor-card {
+  background-color: #292929;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.factor-card h3 {
+  color: #ffffff;
+}
+
+.factor-card p {
+  color: #ff9800;
+}
+/* Chart container */
+.chart-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #444;
+}
+
+.recharts-tooltip-wrapper {
+  color: white;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.recharts-bar-rectangle {
+  stroke: #ff9800;
+  stroke-width: 1px;
+}
+
+.recharts-bar-rectangle:hover {
+  fill: #e57c00;
+}
+
+/* Custom for Pie and Radar chart */
+.recharts-radar {
+  stroke: #ff9800;
+}
+
+.recharts-radar:hover {
+  fill: #e57c00;
+}
+
+/* Upper-right corner nickname circle */
+.user-circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-circle:hover {
+  background-color: #0056b3;
+}

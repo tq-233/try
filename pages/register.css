@@ -1,0 +1,76 @@
+/* 二维码部分样式 */
+.qr-section {
+    text-align: center;
+}
+  
+.qr-codes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.qr-code {
+    display: inline-block;
+    text-align: center;
+}
+  
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+  
+.qr-code p {
+    color: white;
+}
+/* 登录页面样式 */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+  
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #fff;
+}
